@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Portfolio of Bhuvaneshwari C, B.Tech Computer Science and Engineering (AI & ML) student at Jain Deemed-to-be University, Bengaluru.">
+  <title>Bhuvaneshwari C. — AI & ML Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="page-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bhuvaneshwari C home">
+      <span class="brand-mark">BC<span>.</span></span>
+      <span class="brand-name">BHUVANESHWARI C.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Beyond academics</a>
+      <a class="nav-resume" href="{{ url_for('resume') }}">Resume <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- COVER -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-meta micro-row">
+        <span>PORTFOLIO / 2026</span>
+        <span>AI &amp; ML UNDERGRADUATE</span>
+        <span class="meta-location">BENGALURU, INDIA</span>
+      </div>
+      <div class="hero-rules" aria-hidden="true"></div>
+      <div class="hero-word" aria-hidden="true">PORTFOLIO</div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="{{ url_for('static', filename='images/bhuvaneshwari-portrait.jpg') }}" alt="Bhuvaneshwari C standing in a charcoal grey formal suit">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="red-dot"></span> COMPUTER SCIENCE / ARTIFICIAL INTELLIGENCE</p>
+        <h1 id="heroTitle">Bhuvaneshwari<br><span>C.</span></h1>
+        <p class="hero-subtitle">Curious mind. Building with code.<br>Exploring what AI can make possible.</p>
+        <a class="round-link" href="#about" aria-label="Scroll to about section">↓</a>
+      </div>
+      <div class="hero-footer micro-row">
+        <a href="mailto:bhuvanaac27@gmail.com">BHUVANAAC27@GMAIL.COM</a>
+        <span>JAIN DEEMED-TO-BE UNIVERSITY</span>
+        <a href="https://www.linkedin.com/in/bhuvaneshwari-c-3776b7390" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section-pad" id="about">
+      <div class="section-topline"><span>01 / THE PERSON</span><span>ABOUT ME</span></div>
+      <div class="intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow">HELLO, I’M</p>
+          <h2 class="display-heading">BHUVANESHWARI<br><span class="outline-text">C.</span></h2>
+          <p class="intro-description">A B.Tech student in Computer Science &amp; Engineering (AI &amp; ML) at Jain Deemed-to-be University, Bengaluru. I’m building my foundation in programming and exploring practical applications of AI, image processing and simulation.</p>
+          <p class="intro-description intro-description-secondary">I have contributed to a space-tech simulation website through Smart India Hackathon and am currently working with classmates on a student skill–opportunity matching and skill-gap analysis system.</p>
+          <div class="intro-facts">
+            <div><span class="fact-label">CURRENTLY</span><strong>B.Tech / AI &amp; ML</strong></div>
+            <div><span class="fact-label">BASED IN</span><strong>Bengaluru, India</strong></div>
+          </div>
+        </div>
+        <div class="intro-portrait">
+          <div class="portrait-disc" aria-hidden="true"></div>
+          <img src="{{ url_for('static', filename='images/bhuvaneshwari-portrait.jpg') }}" alt="Portrait of Bhuvaneshwari C" loading="lazy">
+          <span class="portrait-index">FIG. 01 — BHUVANESHWARI C.</span>
+        </div>
+      </div>
+      <div class="ticker" aria-label="Areas of interest"><div class="ticker-track"><span>ARTIFICIAL INTELLIGENCE <b>✳</b> IMAGE PROCESSING <b>✳</b> SIMULATION <b>✳</b> PROBLEM SOLVING <b>✳</b> ARTIFICIAL INTELLIGENCE <b>✳</b> IMAGE PROCESSING <b>✳</b> SIMULATION <b>✳</b> PROBLEM SOLVING <b>✳</b></span></div></div>
+    </section>
+
+    <!-- EDUCATION + SKILLS -->
+    <section class="education section-pad" id="education">
+      <div class="section-topline"><span>02 / THE FOUNDATION</span><span>EDUCATION &amp; SKILLS</span></div>
+      <div class="education-grid">
+        <div class="education-main">
+          <p class="eyebrow">LEARNING IN PROGRESS</p>
+          <h2 class="display-heading">MY<br>EDU<span class="red-text">CATION</span></h2>
+          <div class="degree-card">
+            <div class="degree-date">2025 — 2029 <span>ONGOING</span></div>
+            <h3>Jain Deemed-to-be University</h3>
+            <p>B.Tech — Computer Science &amp; Engineering (AI &amp; ML)</p>
+            <div class="sgpa"><strong>9.0</strong><span>SEMESTER 1 SGPA / 10.0</span></div>
+          </div>
+          <div class="school-list">
+            <div class="school-row"><span>2025</span><div><strong>Class XII — State Board</strong><small>Aggregate: 82%</small></div></div>
+            <div class="school-row"><span>2023</span><div><strong>Class X — CBSE</strong><small>Aggregate: 89% · Information Technology: 100%</small></div></div>
+          </div>
+        </div>
+        <div class="skills-panel">
+          <p class="eyebrow">TOOLS I’M WORKING WITH</p>
+          <h2 class="display-heading small-heading">TECHNICAL<br><span class="outline-text">SKILLS</span></h2>
+          <div class="skill-group"><span class="skill-number">01</span><div><h3>Languages</h3><p>Java <i>/</i> C <i>/</i> Python <small>(basics)</small></p></div></div>
+          <div class="skill-group"><span class="skill-number">02</span><div><h3>Core concepts</h3><p>Object-Oriented Programming (OOP) <i>/</i> Core Java</p></div></div>
+          <div class="skill-group"><span class="skill-number">03</span><div><h3>Additional</h3><p>Basic web development <i>/</i> Image-processing concepts <i>/</i> Simulation concepts</p></div></div>
+          <div class="skill-note">A growing toolkit — built through coursework, projects and continuous practice.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section-pad" id="projects">
+      <div class="section-topline"><span>03 / SELECTED WORK</span><span>PROJECTS</span></div>
+      <div class="projects-heading-row">
+        <h2 class="display-heading">THINGS I’VE<br><span class="red-text">WORKED ON.</span></h2>
+        <p class="section-aside">Exploring technology by working on problems that connect software, data and real-world use cases.</p>
+      </div>
+      <article class="project-card project-card-featured">
+        <div class="project-visual lunar-visual" aria-hidden="true">
+          <div class="moon-orb"></div><div class="moon-shadow"></div><span class="visual-label">LUNAR SURFACE / PSR STUDY</span><span class="visual-cross">+</span>
+        </div>
+        <div class="project-info">
+          <div class="project-meta"><span>01 — SMART INDIA HACKATHON</span><span>SPACE-TECH</span></div>
+          <h3>Space-Tech PSR Detection &amp; Simulation Website</h3>
+          <p>Contributed to a web-based simulation platform focused on detecting Permanently Shadowed Regions (PSRs) in lunar regions.</p>
+          <p>Worked on the space-tech problem statement, simulation and website development, using image-processing and simulation concepts to visualize lunar regions.</p>
+          <div class="project-tags"><span>Image Processing</span><span>Simulation</span><span>Website Development</span></div>
+        </div>
+      </article>
+      <article class="project-card project-card-reverse">
+        <div class="project-visual matching-visual" aria-hidden="true">
+          <div class="match-node node-one">SKILLS</div><div class="match-node node-two">GAPS</div><div class="match-node node-three">MATCH</div><div class="match-line line-one"></div><div class="match-line line-two"></div><div class="match-line line-three"></div><span class="visual-label">STUDENT / OPPORTUNITY GRAPH</span>
+        </div>
+        <div class="project-info">
+          <div class="project-meta"><span>02 — ONGOING PROJECT</span><span>EDTECH / AI</span></div>
+          <h3>AI-Based Student Skill–Opportunity Matching &amp; Skill Gap Analyzer</h3>
+          <p>Developing a system with classmates to match student skills with internships, projects, hackathons and placement opportunities.</p>
+          <p>Identifying skill gaps from coursework, projects, certifications and GitHub activity to support a personalized learning roadmap.</p>
+          <div class="project-tags"><span>Skill Matching</span><span>Opportunity Discovery</span><span>Learning Roadmap</span></div>
+          <span class="status-label"><span></span> CURRENTLY IN DEVELOPMENT</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="certifications section-pad" id="certifications">
+      <div class="section-topline"><span>04 / CONTINUOUS LEARNING</span><span>CERTIFICATIONS</span></div>
+      <div class="cert-grid">
+        <div><p class="eyebrow">COURSES &amp; SIMULATIONS</p><h2 class="display-heading">ALWAYS<br><span class="outline-text">LEARNING.</span></h2></div>
+        <div class="cert-list">
+          <article class="cert-row"><span class="cert-index">01</span><div><h3>Agentic AI: Build Your First Agentic AI System</h3><p>LinkedIn · Jun 2026</p><small>Generative AI / AI Agents</small></div><span class="cert-arrow">↗</span></article>
+          <article class="cert-row"><span class="cert-index">02</span><div><h3>Software Engineering Job Simulation</h3><p>Forage · JPMorgan Chase &amp; Co. · Jun 2026</p><small>Git / H2 Database</small></div><span class="cert-arrow">↗</span></article>
+          <article class="cert-row"><span class="cert-index">03</span><div><h3>Java Object-Oriented Programming</h3><p>LinkedIn Learning · Jun 2026</p><small>OOP / Core Java</small></div><span class="cert-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEYOND ACADEMICS -->
+    <section class="beyond section-pad" id="experience">
+      <div class="section-topline"><span>05 / OUTSIDE THE CLASSROOM</span><span>BEYOND ACADEMICS</span></div>
+      <h2 class="display-heading">MORE THAN<br><span class="red-text">JUST CODE.</span></h2>
+      <div class="beyond-grid">
+        <article class="beyond-card ambassador"><span class="beyond-no">01</span><span class="beyond-icon">↗</span><h3>Campus Ambassador</h3><p class="beyond-org">LEARN OVERSEAS</p><p>Student outreach and engagement; communicating program information and helping connect interested students with Learn Overseas opportunities.</p><p>Communication, relationship-building and social media engagement.</p></article>
+        <article class="beyond-card"><span class="beyond-no">02</span><span class="beyond-icon">◉</span><h3>Throwball</h3><p>Represented school and college teams at inter-school and inter-branch tournaments, winning semi-final and final matches. Currently an active member of the college throwball team.</p></article>
+        <article class="beyond-card"><span class="beyond-no">03</span><span class="beyond-icon">✳</span><h3>Dance</h3><p>Trained in semi-classical and western dance forms.</p></article>
+        <article class="beyond-card"><span class="beyond-no">04</span><span class="beyond-icon">▧</span><h3>Video &amp; Photo Editing</h3><p>Skilled in editing for personal and event-related projects.</p></article>
+      </div>
+      <div class="soft-skills">
+        <div><p class="eyebrow">HOW I WORK</p><h3>PEOPLE SKILLS<br><span class="outline-text">MATTER.</span></h3></div>
+        <div class="soft-skill-list"><span>Communication &amp; student outreach</span><span>Social media engagement</span><span>Teamwork &amp; leadership</span><span>Coordination</span><span>Presentation skills</span><span>Research</span><span>Problem-solving</span><span>Video / photo editing</span></div>
+      </div>
+      <div class="languages-row"><span class="eyebrow">LANGUAGES</span><div class="language-list"><span>English <small>Professional</small></span><span>Kannada <small>Native</small></span><span>Telugu <small>Native</small></span><span>Tamil <small>Native</small></span><span>Hindi <small>Fluent</small></span><span>Malayalam <small>Basic</small></span></div></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section-pad" id="contact">
+      <div class="section-topline"><span>06 / LET’S CONNECT</span><span>CONTACT</span></div>
+      <p class="eyebrow">HAVE AN OPPORTUNITY OR A GOOD PROBLEM?</p>
+      <h2 class="contact-heading">LET’S<br><span>MAKE</span><br>IT <i>HAPPEN.</i></h2>
+      <div class="contact-bottom">
+        <a class="email-link" href="mailto:bhuvanaac27@gmail.com">BHUVANAAC27@GMAIL.COM <span>↗</span></a>
+        <div class="contact-details">
+          <a href="tel:+919353893649">+91 9353893649</a>
+          <a href="https://www.linkedin.com/in/bhuvaneshwari-c-3776b7390" target="_blank" rel="noopener noreferrer">LINKEDIN PROFILE ↗</a>
+          <a href="{{ url_for('resume') }}">DOWNLOAD RESUME ↓</a>
+        </div>
+      </div>
+      <footer class="site-footer"><a class="footer-brand" href="#home">BC<span>.</span></a><span>BHUVANESHWARI C. / BENGALURU, INDIA</span><span>© <span id="year">2026</span> — PORTFOLIO</span><a href="#home">BACK TO TOP ↑</a></footer>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>
