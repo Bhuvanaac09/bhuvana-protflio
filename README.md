@@ -23,18 +23,33 @@ npm start
 ```text
 .
 ├── server.ts
+├── vercel.json
 ├── package.json
 ├── tsconfig.json
 ├── README.md
 └── public/
     ├── index.html
+    ├── health.json
     ├── css/style.css
     ├── js/main.js
     ├── images/bhuvaneshwari-portrait.jpg
     └── files/Bhuvaneshwari-C-Resume.pdf
 ```
 
-The portfolio is served with Express + HTML/CSS/JavaScript. The resume download is available at `/resume` from the website's header and contact section, and a health check endpoint is available at `/health`.
+## Deploy on Vercel
+
+1. Push this repository to GitHub (or export/download the project and push it to your GitHub repo).
+2. Go to [vercel.com/new](https://vercel.com/new) and import your repository.
+3. Leave the default settings as-is — `vercel.json` automatically configures the build, static output directory (`public`), and `/resume` PDF download route.
+4. Click **Deploy**.
+
+Alternatively, deploy directly from your terminal using the Vercel CLI:
+
+```bash
+npx vercel --prod
+```
+
+The portfolio is served with Express locally and as an optimized static site on Vercel. The resume download is available at `/resume` from the website's header and contact section, and a health check endpoint is available at `/health`.
 
 ## Update content
 
