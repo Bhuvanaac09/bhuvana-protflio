@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090909">
   <meta name="description" content="Portfolio of Bhuvaneshwari C, B.Tech Computer Science and Engineering (AI & ML) student at Jain Deemed-to-be University, Bengaluru.">
+  <meta property="og:title" content="Bhuvaneshwari C. — AI & ML Portfolio">
+  <meta property="og:description" content="Portfolio of Bhuvaneshwari C, B.Tech Computer Science and Engineering (AI & ML) student at Jain Deemed-to-be University, Bengaluru.">
+  <meta property="og:type" content="website">
   <title>Bhuvaneshwari C. — AI & ML Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div class="page-progress" aria-hidden="true"><span id="progressBar"></span></div>
@@ -27,7 +30,7 @@
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Beyond academics</a>
-      <a class="nav-resume" href="{{ url_for('resume') }}">Resume <span>↗</span></a>
+      <a class="nav-resume" href="/resume" download="Bhuvaneshwari-C-Resume.pdf">Resume <span>↗</span></a>
     </nav>
   </header>
 
@@ -42,7 +45,7 @@
       <div class="hero-rules" aria-hidden="true"></div>
       <div class="hero-word" aria-hidden="true">PORTFOLIO</div>
       <div class="hero-image-wrap">
-        <img class="hero-image" src="{{ url_for('static', filename='images/bhuvaneshwari-portrait.jpg') }}" alt="Bhuvaneshwari C standing in a charcoal grey formal suit">
+        <img class="hero-image" src="/images/bhuvaneshwari-portrait.jpg" alt="Bhuvaneshwari C standing in a charcoal grey formal suit">
       </div>
       <div class="hero-copy">
         <p class="eyebrow"><span class="red-dot"></span> COMPUTER SCIENCE / ARTIFICIAL INTELLIGENCE</p>
@@ -73,7 +76,7 @@
         </div>
         <div class="intro-portrait">
           <div class="portrait-disc" aria-hidden="true"></div>
-          <img src="{{ url_for('static', filename='images/bhuvaneshwari-portrait.jpg') }}" alt="Portrait of Bhuvaneshwari C" loading="lazy">
+          <img src="/images/bhuvaneshwari-portrait.jpg" alt="Portrait of Bhuvaneshwari C" loading="lazy">
           <span class="portrait-index">FIG. 01 — BHUVANESHWARI C.</span>
         </div>
       </div>
@@ -183,12 +186,12 @@
         <div class="contact-details">
           <a href="tel:+919353893649">+91 9353893649</a>
           <a href="https://www.linkedin.com/in/bhuvaneshwari-c-3776b7390" target="_blank" rel="noopener noreferrer">LINKEDIN PROFILE ↗</a>
-          <a href="{{ url_for('resume') }}">DOWNLOAD RESUME ↓</a>
+          <a href="/resume" download="Bhuvaneshwari-C-Resume.pdf">DOWNLOAD RESUME ↓</a>
         </div>
       </div>
       <footer class="site-footer"><a class="footer-brand" href="#home">BC<span>.</span></a><span>BHUVANESHWARI C. / BENGALURU, INDIA</span><span>© <span id="year">2026</span> — PORTFOLIO</span><a href="#home">BACK TO TOP ↑</a></footer>
     </section>
   </main>
-  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

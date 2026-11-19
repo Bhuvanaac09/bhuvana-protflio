@@ -1,46 +1,41 @@
 # Bhuvaneshwari C. — Portfolio
 
-A responsive, single-page portfolio served with Python and Flask. The design follows the supplied editorial reference: a near-black canvas, oversized red display type, condensed headings, and strong portrait-led sections.
+A responsive, single-page portfolio served with Node.js and Express. The design follows an editorial aesthetic: a near-black canvas, oversized red display type, condensed headings, and portrait-led sections.
 
-## Run locally (Windows / PowerShell)
+## Run locally
 
-1. Extract the ZIP file.
-2. Open the extracted `bhuvaneshwari_portfolio` folder in VS Code.
-3. Open the VS Code terminal and run:
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
+```bash
+npm install
+npm run dev
 ```
 
-4. Open <http://127.0.0.1:5000> in your browser.
+Open <http://localhost:3000> in your browser.
 
-If PowerShell blocks virtual-environment activation, run the following once in that terminal, then activate again:
+To build and run for production:
 
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```bash
+npm run build
+npm start
 ```
 
 ## Project structure
 
 ```text
-bhuvaneshwari_portfolio/
-├── app.py
-├── requirements.txt
+.
+├── server.ts
+├── package.json
+├── tsconfig.json
 ├── README.md
-├── templates/
-│   └── index.html
-└── static/
+└── public/
+    ├── index.html
     ├── css/style.css
     ├── js/main.js
     ├── images/bhuvaneshwari-portrait.jpg
     └── files/Bhuvaneshwari-C-Resume.pdf
 ```
 
-The portfolio is built with Flask + HTML/CSS/JavaScript. Python runs the local web server; the browser uses HTML and CSS to render the interface. The resume download is available from the website's header and contact section.
+The portfolio is served with Express + HTML/CSS/JavaScript. The resume download is available at `/resume` from the website's header and contact section, and a health check endpoint is available at `/health`.
 
 ## Update content
 
-Edit `templates/index.html` to update the portfolio text. Replace `static/images/bhuvaneshwari-portrait.jpg` to change the profile image. Keep the filename the same unless you also update the image paths in the template and CSS.
+Edit `public/index.html` to update the portfolio text. Replace `public/images/bhuvaneshwari-portrait.jpg` to change the profile image, and replace `public/files/Bhuvaneshwari-C-Resume.pdf` to update the downloadable resume.
